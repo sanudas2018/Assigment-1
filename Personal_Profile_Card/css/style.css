@@ -1,0 +1,146 @@
+/* Google font load  */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* manage all margin and padding */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(254, 254, 254, 1);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Start card header style */
+.card-header{
+    overflow: hidden;
+    background-color: #ced2d3;
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+.card-header p{
+    font-size: 14px;
+    color: rgb(243, 240, 240);
+    padding: 4px 2px 3px 3px;
+}
+/* End card header style */
+
+/* Start Main Card body style */
+.card-body{
+    margin-top: -14px;
+}
+img{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    border: 2px solid rgb(252, 250, 251);
+}
+
+.card{
+    width: 350px;
+    height: 480px;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #ecf1f3;
+    box-shadow: rgba(111, 100, 101, 0.37) 0px 7px 29px 0px;
+}
+.card:hover {
+    background-color: rgb(248, 248, 248);
+    transition: 2s;
+}
+.card-body .img{
+    text-align: center;
+}
+.title{
+    margin: 18px 0px 16px 0px;
+}
+.card-body .title{
+    text-align: center;
+}
+.card-body .title h1{
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: rgb(31, 30, 30);
+}
+
+.card-body .title p{
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(85, 83, 83);
+    margin-top: 7px;
+}
+.sort-description{
+    width: 280px;
+    font-family: "Merriweather", serif;
+    font-size: 15px;
+    color: rgb(96, 97, 99);
+    word-spacing: 2px;
+    margin: 0px auto;
+    text-align: center;
+
+}
+.sort-description p{
+    line-height: 19px;
+}
+.achievement{
+    
+    display: grid;
+    grid-template-columns: repeat(3,80px);
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0px ;
+    
+}
+.projects, .following, .followers{
+    text-align: center;
+    
+}
+.ptoject-title{
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    color: rgb(96, 97, 99);
+}
+.count p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    color: rgb(80, 77, 77);
+    font-weight: bold;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+}
+
+
+/* Start Card Button Option */
+.follow-btn, .hire-btn{
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 9px 38px;
+    border: 1px solid rgb(75, 73, 73);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.follow-btn{
+    font-weight: 800;
+}
+
+.hire-btn{
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
