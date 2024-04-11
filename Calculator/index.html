@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+   
+
+</head>
+<body class="bg-dark bg-opacity-75">
+
+    <div class="container shadow-lg mt-xxl-4">
+      <!-- Header Option  -->
+        <div class="row text-center bg-primary-subtle p-3 bg-opacity-25">
+            <div class="col fs-2 fw-bolder ">
+                <p>Simple Calculator</p>
+            </div>
+        </div>
+
+        <!-- Calculator Option Start -->
+        <div class="row align-items-center justify-content-center bg-dark bg-opacity-50 py-4 mt-1">
+            
+          <div class="col-10 ">
+            <form class="row gx-3 gy-2 ">
+              
+              <div class="col-md-4">
+                <label for="inputEmail4" class="form-label fw-bolder text-light">Number 1:</label>
+                <input type="number" class="form-control fw-bolder" id="inputNumber1" placeholder="Enter First Number">
+              </div>
+              <div class="col-md-4">
+                <label for="inputEmail4" class="form-label fw-bolder  text-light">Operation:</label>
+                <select class="form-select" id="operator">
+                                
+                  <option value="1">Addition (+)</option>
+                  <option value="2">Subtraction (-)</option>
+                  <option value="3">Multiplication (*)</option>
+                  <option value="4">Division (/)</option>
+                  
+                </select>
+              </div>
+             
+              <div class="col-md-4">
+                <label for="inputEmail4" class="form-label fw-bolder  text-light">Number 2: </label>
+                <input type="number" class="form-control fw-bolder" id="inputNumber2" placeholder="Enter Second Number">
+              </div>
+
+            </form>
+            <div class="col-12 mt-4">
+              <button type="submit" id="calculate" class="btn btn-primary w-25 fw-semibold">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Calculator Option End -->
+
+        <!-- Message Option  -->
+          <div class="row bg-primary bg-opacity-75 bg-gradient overflow-hidden rounded-4 mt-2" id="alertSection">
+            <!-- Success Message Alert Option -->
+            
+
+            <!-- Wrong Message  Alert Option -->
+           
+        </div>
+      </div>
+
+
+
+
+
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script src="./js/script.js"></script>
+</body>
+</html>
