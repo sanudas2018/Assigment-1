@@ -69,7 +69,7 @@ class BankAccount {
 
 // New Object Create
 const bankAccountObj = new BankAccount( '20240025', 'SANU', 2000);
-// const bankAccountObj2 = new BankAccount( '1548394', 'SSDD', 1500);
+
 
 // Deposit function call & input Deposit Value
 console.log(`\nDeposited and Withdrawal : `);
@@ -81,5 +81,11 @@ bankAccountObj.withdraw(400);
 // All Account Information & Call Function
 bankAccountObj.displayAccountInfo()
 
-
+// ...Second Bank Account Create ...
+// console.log("\nSecond Bank Account for Ostad");
+// const bankAccountObj2 = new BankAccount( '1122', 'Ostad', 10000);
+// console.log(`\nDeposited and Withdrawal : `);
+// bankAccountObj2.deposit(5000);
+// bankAccountObj2.withdraw(4000);
+// bankAccountObj2.displayAccountInfo()
 
