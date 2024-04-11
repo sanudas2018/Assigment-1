@@ -23,11 +23,11 @@ class BankAccount {
     }
 
     // Start Deposit method
-    deposit(amount){
+    deposit(amount = 0){
        if(this.accountNumber == this.accountNumber ){
-        let depositAmout = this.balance += amount;
+        let depositAmount = this.balance += amount;
         console.log(`Deposited  ${amount} into Account  ${this.accountNumber}`);
-        return depositAmout;
+        return depositAmount;
        }else{
         console.log("Your account number does not Match")
        }
@@ -40,9 +40,9 @@ class BankAccount {
         }else if(amount > this.balance){
             console.log('Insufficient Funds');
         }else{
-            let depositAmout = this.balance -= amount;
+            let depositAmount = this.balance -= amount;
             console.log(`Withdrawal ${amount} from Account  ${this.accountNumber}`);
-            return depositAmout;
+            return depositAmount;
         }     
         
     };
@@ -53,30 +53,30 @@ class BankAccount {
 
     // All Account Information
     displayAccountInfo(){
-        let title = `\nAccoutn Information :`;
+        let title = `\nAccount Information :`;
         let AccountNumber = `Account Number : ${this.accountNumber}`;
-        let wnerName = `Owner Name : ${this.ownerName}`;
+        let ownerName = `Owner Name : ${this.ownerName}`;
 
     
         let balance = `Current Balance: $${this.getBalance()}`;
         console.log(title)
         console.log(AccountNumber)
-        console.log(wnerName)
+        console.log(ownerName)
         console.log(balance)
     };
     
 }
 
 // New Object Create
-const bankAccountObj = new BankAccount( '20240025', 'SANU', 1000);
+const bankAccountObj = new BankAccount( '20240025', 'SANU', 2000);
 // const bankAccountObj2 = new BankAccount( '1548394', 'SSDD', 1500);
 
 // Deposit function call & input Deposit Value
 console.log(`\nDeposited and Withdrawal : `);
-bankAccountObj.deposit(2000);
+bankAccountObj.deposit(500);
 
 // Withdraw function call & input Withdraw Value
-bankAccountObj.withdraw(500);
+bankAccountObj.withdraw(400);
 
 // All Account Information & Call Function
 bankAccountObj.displayAccountInfo()
